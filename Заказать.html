@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="/js/function checkform().js">
+</head>
+<body class="body">
+    
+    <div class="wrapper">
+        <h1 class="qa__title">jewelry</h1>
+        <form class="question" onSubmit="return checkform()">
+            <img class="tochki" src="./img/Точки.png" style="float:left ">
+                <img class="tochki" src="./img/Точки.png" style="float:right ">
+                <div class="reviews__wrapper1">
+                                    <div class="order__wrapper">
+                    <p class="qa__text1" style="margin-bottom: 40px">
+                        your information
+                    </p>
+                    <p class="buy__inf">
+                        name:<input required="required" type="name" class="input__text"  name="text">
+                    </p>
+                    <p class="buy__inf">
+                        e-mail:<input required="required" type="email"  class="input__text" name="email" >
+                    </p>
+                    <p class="buy__inf">
+                        phone:<input required="required" type="text" pattern="^[ 0-9]+$" maxlength="11" class="input__text" name="range">
+                    </p>
+                    <p class="qa__text1" style="margin-bottom: 40px; padding-top:30px;">
+                        delivery method
+                    </p>
+                    <p type="text" class="buy__inf">
+                        address:<input required="required" type="text" class="input__text"  name="text"> 
+                    </p>
+                    <p class="buy__inf" style="margin-bottom:50px">
+                        apartments:<input type="text" required pattern="^[ 0-9]+$" maxlength="4" class="input__text" name="range">
+                    </p>
+                                
+                       <p> <input  type="submit"  value="order" class="buy__order" onclick="window.open('./thanks.html')" style="border:0;font-family: 'Sulphur Point'; background:white;" ></p>
+                    
+
+                </form>
+    </div>
+    <a class="link__back"  style="text-align: left;" href="/index.html" ><img class="strelka" src="img/svg/стрелкавлево.svg">back</a>
+</div>
+
+</body>
+</html>
